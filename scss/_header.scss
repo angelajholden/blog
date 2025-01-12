@@ -1,0 +1,64 @@
+.header {
+	.top_header {
+		@include flex-container;
+		align-items: center;
+		padding: 3rem;
+	}
+}
+
+.button_menu {
+	div {
+		width: 25px;
+		height: 0;
+		border-bottom: 2px solid $black;
+		margin-bottom: 6.3334px;
+	}
+}
+
+.primary_logo {
+	position: relative;
+	font-family: "Gelasio", serif;
+	font-size: 4rem;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1;
+	margin: 0;
+
+	span {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 1rem;
+		background-color: $white;
+	}
+}
+
+.main_nav {
+	padding: 2rem 0;
+	border-top: 1px solid $gray;
+	border-bottom: 1px solid $gray;
+
+	ul {
+		@include flex-container;
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	.nav_link {
+		font-family: "Gelasio", serif;
+		color: $black;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-decoration-color: transparent;
+		transition: all 300ms ease-in-out;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $links;
+			text-decoration-color: $links;
+		}
+	}
+}

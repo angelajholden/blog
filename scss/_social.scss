@@ -1,0 +1,23 @@
+.social_nav {
+	ul {
+		@include flex-container;
+		margin: 0;
+		padding: 0;
+	}
+
+	.social_item {
+		display: block;
+		margin: 0 0.5rem;
+
+		a {
+			display: block;
+			padding: 11.5px;
+		}
+
+		svg {
+			display: block;
+			width: 25px;
+			height: 25px;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+/*
+.cabin-<uniquifier> {
+  font-family: "Cabin", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+/*
+.gelasio-<uniquifier> {
+  font-family: "Gelasio", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+// color variables
+$white: #fff;
+$black: #222;
+$gray: #eaeaea;
+$lt-gray: #f8f8f8;
+$links: #005aa2;
+
+// flexbox mixins
+// Mixin for flex container
+@mixin flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-flow: row wrap;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+// Mixin for flex items
+@mixin flex-item($width-percent) {
+	width: $width-percent;
+	margin: 0 1rem;
+}
+
+// Mixin for media query
+@mixin breakpoint($max-width) {
+	@media (max-width: $max-width) {
+		@content;
+	}
+}
+
+// Usage example:
+.container {
+	@include flex-container;
+
+	.full_width {
+		@include flex-item(100%);
+		margin: 0; // Override to remove margin
+	}
+
+	.half_width {
+		@include flex-item(50%);
+	}
+
+	.one_third {
+		@include flex-item(33.3333%);
+	}
+
+	.one_fourth {
+		@include flex-item(25%);
+	}
+
+	// Mobile view adjustments
+	@include breakpoint(940px) {
+		.half-width,
+		.one-third,
+		.one-fourth {
+			@include flex-item(100%);
+		}
+	}
+}

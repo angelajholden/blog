@@ -1,0 +1,57 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Cabin", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100%;
+	line-height: 1.65;
+	color: $black;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-underline-offset: 5px;
+	text-decoration-thickness: 3px;
+	color: $links;
+}
+
+.access-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.button_icon {
+	display: inline-block;
+	padding: 11.5px;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	svg {
+		display: block;
+		width: 25px;
+		height: 25px;
+		stroke: $black;
+	}
+}
