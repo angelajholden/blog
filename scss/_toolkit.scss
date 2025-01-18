@@ -43,7 +43,7 @@ a {
 
 .button_icon {
 	display: inline-block;
-	padding: 11.5px;
+	padding: 11.5px; // makes the icon tap target 48px x 48px for a11y
 	border: none;
 	background: none;
 	cursor: pointer;
