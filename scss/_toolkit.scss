@@ -19,6 +19,10 @@ body {
 	color: $black;
 }
 
+figure {
+	margin: 0;
+}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -39,6 +43,13 @@ a {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+.main_wrap {
+	@include flex-container;
+	max-width: 75rem;
+	margin: 0 auto;
+	padding: 3rem 0;
 }
 
 .button_icon {

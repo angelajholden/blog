@@ -33,16 +33,16 @@ $links: #005aa2;
 @mixin flex-container {
 	display: flex;
 	justify-content: space-between;
-	align-items: stretch;
+	align-items: flex-start;
 	flex-flow: row wrap;
-	margin-left: -1rem;
-	margin-right: -1rem;
+	// margin-left: -1rem;
+	// margin-right: -1rem;
 }
 
 // Mixin for flex items
 @mixin flex-item($width-percent) {
 	width: $width-percent;
-	margin: 0 1rem;
+	// margin: 0 1rem;
 }
 
 // Mixin for media query
@@ -62,7 +62,7 @@ $links: #005aa2;
 	}
 
 	.half_width {
-		@include flex-item(50%);
+		@include flex-item(48%);
 	}
 
 	.one_third {
