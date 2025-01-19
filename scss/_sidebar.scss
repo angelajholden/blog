@@ -1,0 +1,45 @@
+.sidebar_layout {
+	@include flex-item(30%);
+}
+
+.sidebar_item {
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border: 1px solid $dk-gray;
+
+	.tertiary_heading {
+		display: inline-block;
+		font-family: "Gelasio", serif;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		padding: 0 1rem;
+		margin-top: 0;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		background-color: $white;
+	}
+
+	.dashed_border {
+		position: relative;
+		top: -30px;
+		width: 100%;
+		border-top: 2px dashed $dk-gray;
+		z-index: -1;
+	}
+
+	.image {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16/9;
+
+		img {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
