@@ -1,0 +1,32 @@
+.footer {
+	padding: 5rem 0 0;
+	text-align: center;
+	background-color: $black;
+	color: $white;
+
+	.main_logo {
+		margin-bottom: 2rem;
+	}
+
+	.primary_logo span {
+		background-color: $black;
+	}
+
+	.social_nav ul {
+		justify-content: center;
+		margin-bottom: 4rem;
+
+		svg {
+			fill: $dk-gray;
+		}
+	}
+
+	.footer_nav {
+		border-top: 1px solid $link-gray;
+		border-bottom: none;
+
+		.nav_link {
+			color: $dk-gray;
+		}
+	}
+}

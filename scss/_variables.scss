@@ -28,6 +28,7 @@ $dk-gray: #e5e5e5;
 $gray: #eaeaea;
 $lt-gray: #f8f8f8;
 $links: #005aa2;
+$link-gray: #595959;
 
 // flexbox mixins
 // Mixin for flex container
@@ -36,14 +37,11 @@ $links: #005aa2;
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-flow: row wrap;
-	// margin-left: -1rem;
-	// margin-right: -1rem;
 }
 
 // Mixin for flex items
 @mixin flex-item($width-percent) {
 	width: $width-percent;
-	// margin: 0 1rem;
 }
 
 // Mixin for media query
@@ -75,10 +73,10 @@ $links: #005aa2;
 	}
 
 	// Mobile view adjustments
-	@include breakpoint(940px) {
-		.half-width,
-		.one-third,
-		.one-fourth {
+	@media (max-width: 960px) {
+		.half_width,
+		.one_third,
+		.one_fourth {
 			@include flex-item(100%);
 		}
 	}

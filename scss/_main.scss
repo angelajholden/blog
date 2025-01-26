@@ -16,7 +16,6 @@
 	.image {
 		position: relative;
 		margin: 0;
-		width: 100%;
 		height: auto;
 		aspect-ratio: 4/3;
 
@@ -61,6 +60,11 @@
 
 .blog_layout {
 	@include flex-item(65%);
+
+	@media (max-width: 960px) {
+		@include flex-item(100%);
+		padding: 1rem;
+	}
 }
 
 .blog_item {
@@ -99,7 +103,6 @@
 		position: relative;
 		width: 100%;
 		height: auto;
-		// margin-top: 2rem;
 		margin: 2rem 0 1rem;
 		aspect-ratio: 1.5/1;
 
