@@ -25,6 +25,13 @@
 		border-top: 1px solid $link-gray;
 		border-bottom: none;
 
+		@media (max-width: 960px) {
+			ul {
+				flex-flow: column wrap;
+				align-items: center;
+			}
+		}
+
 		.nav_link {
 			color: $dk-gray;
 		}

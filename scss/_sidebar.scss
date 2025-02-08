@@ -89,6 +89,10 @@
 	&.instagram_grid {
 		text-align: center;
 
+		.container .half_width {
+			@include flex-item(48%);
+		}
+
 		a {
 			text-decoration: none;
 		}
