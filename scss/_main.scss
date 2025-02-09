@@ -193,6 +193,10 @@
 			.blog_right {
 				@include flex-item(100%);
 				margin: 0.5rem;
+
+				ul {
+					justify-content: center;
+				}
 			}
 		}
 	}

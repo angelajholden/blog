@@ -8,8 +8,19 @@
 		margin-bottom: 2rem;
 	}
 
-	.primary_logo span {
-		background-color: $black;
+	.primary_logo {
+		width: 165px;
+		margin: 0 auto;
+
+		span {
+			background-color: $black;
+		}
+
+		@media (max-width: 400px) {
+			span {
+				left: 0;
+			}
+		}
 	}
 
 	.social_nav ul {
@@ -22,18 +33,29 @@
 	}
 
 	.footer_nav {
+		display: block;
+		padding: 1rem;
 		border-top: 1px solid $link-gray;
 		border-bottom: none;
 
 		@media (max-width: 960px) {
 			ul {
-				flex-flow: column wrap;
+				justify-content: center;
 				align-items: center;
 			}
 		}
 
 		.nav_link {
+			display: block;
+			padding: 0.7rem;
+			margin: 0.3rem;
 			color: $dk-gray;
+
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration-color: $white;
+			}
 		}
 	}
 }
