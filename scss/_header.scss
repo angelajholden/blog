@@ -12,12 +12,31 @@
 
 .button_menu {
 	display: none;
+	position: relative;
+	z-index: 3;
 
 	div {
 		width: 25px;
 		height: 0;
 		border-bottom: 2px solid $black;
 		margin-bottom: 6.3334px;
+		transform: rotateZ(0) translate(0, 0);
+		transition: all 350ms ease;
+	}
+
+	&:active > div,
+	&.active > div {
+		&:nth-of-type(1) {
+			transform: rotateZ(45deg) translate(6px, 5.667px);
+		}
+
+		&:nth-of-type(2) {
+			width: 0;
+		}
+
+		&:nth-of-type(3) {
+			transform: rotateZ(-45deg) translate(6px, -5.667px);
+		}
 	}
 
 	@media (max-width: 960px) {
@@ -89,26 +108,31 @@
 }
 
 .mobile_off_canvas {
-	display: none;
+	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	position: fixed;
 	top: 0;
-	right: 0;
+	right: -320px;
+	overflow-y: scroll;
 	max-width: 320px;
 	height: 100%;
-	overflow-y: scroll;
 	padding: 1rem;
 	background-color: $white;
 	box-shadow: -1px 0 2px 1px rgba($color: $black, $alpha: 0.1);
-	z-index: 1;
+	transition: right 300ms ease-in-out;
+	z-index: 2;
 
-	&.active {
-		display: flex;
+	@media (max-width: 960px) {
+		&.active {
+			right: 0;
+		}
 	}
 
 	.mobile_nav {
+		margin-top: 3rem;
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -139,8 +163,6 @@
 	}
 
 	.mobile_about {
-		margin-top: 3rem;
-
 		.image {
 			position: relative;
 			width: 90%;
