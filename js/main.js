@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		if (isActive) {
 			menu.setAttribute("aria-hidden", "false");
-			document.body.style.overflow = "hidden";
 			const focusableElements = getFocusableElements(menu, menuButton);
 			if (focusableElements.length) focusableElements[0].focus();
 
@@ -51,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			document.addEventListener("keydown", trapNavFocus);
 		} else {
 			menu.setAttribute("aria-hidden", "true");
-			document.body.style.overflow = "";
 			menuButton.focus();
 			document.removeEventListener("keydown", trapNavFocus);
 		}
@@ -69,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		if (isActive) {
 			searchDrawer.setAttribute("aria-hidden", "false");
-			document.body.style.overflow = "hidden";
 
 			// Ensure input gets focus after UI changes
 			setTimeout(() => {
@@ -79,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			document.addEventListener("keydown", trapSearchFocus);
 		} else {
 			searchDrawer.setAttribute("aria-hidden", "true");
-			document.body.style.overflow = "";
 			searchButton.focus();
 			document.removeEventListener("keydown", trapSearchFocus);
 		}
@@ -98,5 +94,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	closeButton.addEventListener("click", toggleSearchDrawer);
 	searchDrawer.addEventListener("keydown", function (event) {
 		if (event.key === "Escape") toggleSearchDrawer();
+	});
+
+	const dropButton = document.querySelector(".dropdown-button");
+	const dropMenu = document.querySelector(".dropdown-menu");
+
+	dropButton.addEventListener("click", function () {
+		dropMenu.classList.toggle("active");
 	});
 });
