@@ -1,4 +1,6 @@
 .form {
+	position: relative;
+
 	input[type="text"],
 	input[type="email"],
 	input[type="tel"],
@@ -29,6 +31,38 @@
 			background-color: $black;
 			border-color: $black;
 			color: $white;
+		}
+	}
+
+	&.form_search {
+		font-family: "Gelasio", serif;
+		font-size: 3rem;
+		width: 75rem;
+		max-width: 100%;
+		margin: 0 1rem;
+	}
+
+	input[type="search"] {
+		width: 100%;
+		padding: 1rem;
+		border: none;
+		border-bottom: 1px solid $gray;
+		text-align: center;
+
+		&::placeholder {
+			color: $black;
+		}
+	}
+
+	.submit_button {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+
+		svg {
+			width: 40px;
+			height: 40px;
 		}
 	}
 }
