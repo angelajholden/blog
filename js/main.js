@@ -85,17 +85,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		trapFocus(event, searchDrawer);
 	}
 
+	// Attach click event to the buttons
 	menuButton.addEventListener("click", toggleNav);
-	menu.addEventListener("keydown", function (event) {
-		if (event.key === "Escape") toggleNav();
-	});
-
 	searchButton.addEventListener("click", toggleSearchDrawer);
 	closeButton.addEventListener("click", toggleSearchDrawer);
-	searchDrawer.addEventListener("keydown", function (event) {
-		if (event.key === "Escape") toggleSearchDrawer();
+
+	// Attach Escape key event to the document
+	document.addEventListener("keydown", function (event) {
+		if (event.key === "Escape" && menu.classList.contains("active")) {
+			toggleNav();
+		} else if (event.key === "Escape" && searchDrawer.classList.contains("active")) {
+			toggleSearchDrawer();
+		}
 	});
 
+	// Sidebar Dropdown
 	const dropButton = document.querySelector(".dropdown-button");
 	const dropMenu = document.querySelector(".dropdown-menu");
 
