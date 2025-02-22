@@ -55,6 +55,10 @@ a {
 	max-width: 75rem;
 	margin: 0 auto;
 	padding: 3rem 0.5rem;
+
+	@media (max-width: 960px) {
+		padding: 1rem 0 0;
+	}
 }
 
 .button_icon {
