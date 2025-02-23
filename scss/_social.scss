@@ -20,10 +20,4 @@
 			height: 25px;
 		}
 	}
-
-	&.top_left {
-		@media (max-width: 960px) {
-			display: none;
-		}
-	}
 }

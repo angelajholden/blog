@@ -16,9 +16,10 @@
 			background-color: $black;
 		}
 
-		@media (max-width: 400px) {
+		@media (max-width: 560px) {
 			span {
 				left: 0;
+				transform: translate(0, -50%);
 			}
 		}
 	}

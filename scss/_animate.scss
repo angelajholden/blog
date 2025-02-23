@@ -4059,3 +4059,20 @@
 	-webkit-animation-name: slideOutUp;
 	animation-name: slideOutUp;
 }
+
+.animate__animated {
+	opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after,
+	.animate__animated {
+		opacity: 1;
+		animation: none !important;
+		transform: none !important;
+		scroll-behavior: auto !important;
+		background-attachment: initial !important;
+	}
+}
