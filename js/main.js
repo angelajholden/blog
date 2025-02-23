@@ -118,7 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			if (entry.isIntersecting) {
 				const target = entry.target;
 				const animation = target.getAttribute("data-animation");
-				target.classList.add(animation);
+				if (animation) {
+					target.classList.add(animation);
+				}
 
 				// Optional: Remove the observer after the animation is triggered
 				observer.unobserve(target);
