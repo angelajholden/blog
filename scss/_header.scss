@@ -6,6 +6,7 @@
 
 	.top_header {
 		@include flex-container;
+		flex-flow: row nowrap;
 		align-items: center;
 		padding: 3rem;
 
@@ -33,7 +34,8 @@
 		}
 
 		.main_logo {
-			width: auto;
+			width: 225px;
+			max-width: 100%;
 			text-align: center;
 		}
 

@@ -12,8 +12,8 @@
 		width: 165px;
 		margin: 0 auto;
 
-		span {
-			background-color: $black;
+		svg {
+			fill: $white;
 		}
 
 		@media (max-width: 560px) {
