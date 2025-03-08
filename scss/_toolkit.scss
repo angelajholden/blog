@@ -37,7 +37,15 @@ img {
 a {
 	text-underline-offset: 5px;
 	text-decoration-thickness: 3px;
+	text-decoration-color: inherit;
 	color: $links;
+	transition: text-decoration-color 300ms ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration-color: transparent;
+	}
 }
 
 .access-hidden {

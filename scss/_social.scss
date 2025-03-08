@@ -12,12 +12,46 @@
 		a {
 			display: block;
 			padding: 11.5px; // makes the icon tap target 48px x 48px for a11y
-		}
 
-		svg {
-			display: block;
-			width: 25px;
-			height: 25px;
+			svg {
+				display: block;
+				width: 25px;
+				height: 25px;
+				fill: $black;
+				transition: fill 300ms ease-in-out;
+			}
+
+			.github + svg {
+				&:hover,
+				&:active,
+				&:focus {
+					fill: $github;
+				}
+			}
+
+			.linkedin + svg {
+				&:hover,
+				&:active,
+				&:focus {
+					fill: $linkedin;
+				}
+			}
+
+			.instagram + svg {
+				&:hover,
+				&:active,
+				&:focus {
+					fill: $instagram;
+				}
+			}
+
+			.pinterest + svg {
+				&:hover,
+				&:active,
+				&:focus {
+					fill: $pinterest;
+				}
+			}
 		}
 	}
 }
