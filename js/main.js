@@ -103,9 +103,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	const dropButton = document.querySelector(".dropdown-button");
 	const dropMenu = document.querySelector(".dropdown-menu");
 
-	dropButton.addEventListener("click", function () {
-		dropMenu.classList.toggle("active");
-	});
+	if (dropButton) {
+		dropButton.addEventListener("click", function () {
+			dropMenu.classList.toggle("active");
+		});
+	}
 
 	const observerOptions = {
 		root: null, // Use the viewport as the container

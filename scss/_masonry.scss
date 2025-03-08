@@ -1,0 +1,40 @@
+.featured,
+.masonry-container {
+	@include flex-item(49%);
+	height: 2500px;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	@media (max-width: 960px) {
+		@include flex-item(100%);
+		padding: 1rem;
+	}
+}
+
+.featured {
+	position: relative;
+
+	.blog_item {
+		position: sticky;
+		top: 2rem;
+	}
+}
+
+.masonry-container {
+	.half_width {
+		@include flex-item(44%);
+	}
+	.secondary_heading {
+		font-size: 1.25rem;
+	}
+
+	.image {
+		margin: 0 0 1rem;
+		aspect-ratio: auto;
+
+		img {
+			position: static;
+		}
+	}
+}

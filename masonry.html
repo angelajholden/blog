@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Masonry | Blog Website</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="masonry">
+		<header class="header">
+			<div class="top_header">
+				<nav class="social_nav top_left">
+					<ul>
+						<li class="social_item">
+							<a href="#">
+								<span class="access-hidden github">Github</span>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
+							</a>
+						</li>
+						<li class="social_item">
+							<a href="#">
+								<span class="access-hidden linkedin">LinkedIn</span>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
+							</a>
+						</li>
+						<li class="social_item">
+							<a href="#">
+								<span class="access-hidden instagram">Instagram</span>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+									<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+									<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+								</svg>
+							</a>
+						</li>
+						<li class="social_item">
+							<a href="#">
+								<span class="access-hidden pinterest">Pinterest</span>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="main_logo">
+					<h1 class="primary_logo">
+						<a href="/">
+							<span class="access-hidden">The Ocean Logo</span>
+							<svg aria-hidden="true" width="100%" height="100%" viewBox="0 0 2068 637" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2">
+								<g transform="matrix(1.44848,0,0,1.44848,-579.258,-521.71)">
+									<g transform="matrix(1,0,0,1,-291.948,155.623)">
+										<g transform="matrix(400,0,0,400,796.626,499.011)">
+											<path d="M0.224,0.187C0.598,0.257 0.699,-0.64 0.328,-0.732C0.034,-0.805 -0.183,0.111 0.224,0.187ZM0.263,0.151C0.023,0.201 0.145,-0.709 0.324,-0.693C0.475,-0.715 0.526,0.014 0.263,0.151Z" style="fill-rule: nonzero" />
+										</g>
+										<g transform="matrix(400,0,0,400,1057.03,499.011)">
+											<path d="M0.272,-0.323C0.272,-0.298 0.309,-0.281 0.318,-0.328C0.331,-0.394 0.34,-0.563 0.191,-0.537C-0.002,-0.503 -0.111,0.076 0.073,0.242C0.277,0.396 0.456,-0.054 0.543,-0.301C0.556,-0.338 0.527,-0.343 0.517,-0.317C0.426,-0.078 0.255,0.264 0.171,0.227C0.044,0.171 0.133,-0.292 0.237,-0.457C0.253,-0.483 0.309,-0.458 0.272,-0.323Z" style="fill-rule: nonzero" />
+										</g>
+										<g transform="matrix(400,0,0,400,1258.63,499.011)">
+											<path d="M0.108,-0.217C0.244,-0.255 0.323,-0.521 0.183,-0.523C-0.08,-0.526 -0.11,0.132 0.159,0.143C0.253,0.147 0.396,-0.018 0.505,-0.314C0.519,-0.352 0.48,-0.336 0.475,-0.323C0.368,-0.05 0.243,0.115 0.167,0.105C0.096,0.096 0.108,-0.067 0.108,-0.217ZM0.109,-0.251C0.113,-0.346 0.194,-0.516 0.219,-0.473C0.233,-0.448 0.193,-0.28 0.109,-0.251Z" style="fill-rule: nonzero" />
+										</g>
+										<g transform="matrix(400,0,0,400,1443.03,499.011)">
+											<path d="M0.3,-0.332C0.23,-0.156 0.183,0.273 0.31,0.323C0.434,0.372 0.605,-0.168 0.687,-0.304C0.696,-0.332 0.668,-0.35 0.648,-0.316C0.562,-0.177 0.442,0.212 0.344,0.271C0.252,0.326 0.418,-0.312 0.437,-0.4C0.437,-0.462 0.355,-0.528 0.316,-0.446C-0.024,-0.581 -0.155,-0.043 0.061,0.061C0.109,0.084 0.235,-0.181 0.3,-0.332ZM0.291,-0.407C0.249,-0.304 0.035,0.174 0.06,-0.051C0.071,-0.153 0.178,-0.472 0.291,-0.407Z" style="fill-rule: nonzero" />
+										</g>
+										<g transform="matrix(400,0,0,400,1695.83,499.011)">
+											<path d="M0.419,-0.527C0.286,-0.575 0.139,-0.131 0.097,-0.05C0.094,-0.068 0.16,-0.494 0.161,-0.503C0.166,-0.594 0.046,-0.593 0.025,-0.531C0.01,-0.46 -0.023,-0.172 -0.021,0.017C-0.02,0.054 0.053,0.133 0.093,0.066C0.257,-0.366 0.352,-0.481 0.372,-0.491C0.417,-0.514 0.422,-0.443 0.416,-0.412C0.368,-0.18 0.211,0.362 0.424,0.362C0.535,0.362 0.725,-0.046 0.803,-0.314C0.81,-0.34 0.774,-0.333 0.769,-0.314C0.674,0.008 0.503,0.291 0.437,0.318C0.335,0.312 0.631,-0.451 0.419,-0.527Z" style="fill-rule: nonzero" />
+										</g>
+									</g>
+									<g transform="matrix(1,0,0,1,0,32.577)">
+										<g transform="matrix(1,0,0,1,0,7.22919)">
+											<rect x="399.908" y="457.129" width="232.092" height="165.741" style="fill: white" />
+										</g>
+										<g transform="matrix(1,0,0,1,192.333,-247.984)">
+											<g transform="matrix(100,0,0,100,248.81,833.058)">
+												<path d="M0.065,-0.734C0.053,-0.661 -0.136,0.287 0.08,0.382C0.223,0.445 0.339,0.135 0.472,-0.31C0.484,-0.349 0.456,-0.385 0.44,-0.331C0.334,0.019 0.194,0.403 0.114,0.339C0.073,0.306 0.122,-0.427 0.187,-0.753C0.202,-0.755 0.337,-0.76 0.359,-0.769C0.386,-0.78 0.374,-0.799 0.369,-0.805C0.313,-0.802 0.264,-0.797 0.194,-0.795C0.205,-0.859 0.214,-0.897 0.232,-0.995C0.248,-1.079 0.155,-1.057 0.136,-1.024C0.117,-1.004 0.098,-0.875 0.073,-0.774L-0.051,-0.767C-0.068,-0.751 -0.07,-0.737 -0.053,-0.727L0.065,-0.734Z" style="fill-rule: nonzero" />
+											</g>
+											<g transform="matrix(100,0,0,100,290.51,833.058)">
+												<path d="M-0.052,0.13C-0.045,0.204 0.068,0.167 0.074,0.125L0.101,-0.061C0.12,-0.114 0.291,-0.434 0.326,-0.377C0.359,-0.324 0.194,0.135 0.294,0.27C0.435,0.46 0.583,-0.024 0.671,-0.305C0.691,-0.369 0.649,-0.362 0.637,-0.321C0.533,0.037 0.402,0.35 0.347,0.268C0.31,0.213 0.562,-0.424 0.32,-0.424C0.252,-0.424 0.138,-0.223 0.108,-0.164L0.157,-0.503C0.374,-0.717 0.512,-1.143 0.344,-1.147C0.283,-1.148 0.212,-1.099 0.144,-0.948C0.011,-0.652 -0.013,-0.187 -0.052,0.13ZM0.16,-0.561C0.176,-0.879 0.293,-1.104 0.347,-1.103C0.418,-1.096 0.373,-0.808 0.16,-0.561Z" style="fill-rule: nonzero" />
+											</g>
+											<g transform="matrix(100,0,0,100,354.11,833.058)">
+												<path d="M0.108,-0.217C0.244,-0.255 0.323,-0.521 0.183,-0.523C-0.08,-0.526 -0.11,0.132 0.159,0.143C0.253,0.147 0.396,-0.018 0.505,-0.314C0.519,-0.352 0.48,-0.336 0.475,-0.323C0.368,-0.05 0.243,0.115 0.167,0.105C0.096,0.096 0.108,-0.067 0.108,-0.217ZM0.109,-0.251C0.113,-0.346 0.194,-0.516 0.219,-0.473C0.233,-0.448 0.193,-0.28 0.109,-0.251Z" style="fill-rule: nonzero" />
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</a>
+					</h1>
+				</div>
+				<div class="top_right">
+					<button class="button_icon button_search">
+						<span class="access-hidden">Search</span>
+						<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+							<path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
+							<path fill="none" stroke="" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448" />
+						</svg>
+					</button>
+					<button class="button_icon button_menu">
+						<span class="access-hidden">Menu</span>
+						<div></div>
+						<div></div>
+						<div></div>
+					</button>
+				</div>
+			</div>
+			<div class="search_drawer">
+				<form class="form form_search" action="">
+					<label class="access-hidden" for="search">Search this site</label>
+					<input type="search" class="search_input" id="search" placeholder="Search" />
+					<button class="button_icon submit_button">
+						<span class="access-hidden">Submit</span>
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100" /></svg>
+					</button>
+				</form>
+				<button class="button_icon button_close">
+					<span class="access-hidden">Close Search</span>
+					<div></div>
+					<div></div>
+				</button>
+			</div>
+			<nav class="main_nav">
+				<ul>
+					<li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Features</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Travel</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Lifestyle</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Fashion</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">About</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="mobile_off_canvas">
+				<nav class="mobile_nav">
+					<ul>
+						<li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+						<li class="nav_item"><a class="nav_link" href="#">Features</a></li>
+						<li class="nav_item"><a class="nav_link" href="#">Travel</a></li>
+						<li class="nav_item"><a class="nav_link" href="#">Lifestyle</a></li>
+						<li class="nav_item"><a class="nav_link" href="#">Fashion</a></li>
+						<li class="nav_item"><a class="nav_link" href="#">About</a></li>
+						<li class="nav_item"><a class="nav_link" href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<aside class="mobile_about">
+					<figure class="image">
+						<img src="./ocean/david-clode-JdNixbsLwS8-unsplash.jpg" alt="placeholder text random lorem picsum" />
+					</figure>
+					<h2 class="secondary_heading">Hello</h2>
+					<div class="blog_description">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum porro accusantium? Minima iste facilis quis necessitatibus architecto, iusto ipsam tempora laudantium placeat aliquam provident amet doloribus repudiandae odio officiis.</p>
+					</div>
+				</aside>
+				<nav class="social_nav">
+					<ul>
+						<li class="social_item">
+							<a href="#">
+								<span class="access-hidden github">Github</span>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
+							</a>
+						</li>
+						<li class="social_item">
+							<a href="#">
+								<span class="access-hidden linkedin">LinkedIn</span>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
+							</a>
+						</li>
+						<li class="social_item">
+							<a href="#">
+								<span class="access-hidden instagram">Instagram</span>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+									<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+									<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+								</svg>
+							</a>
+						</li>
+						<li class="social_item">
+							<a href="#">
+								<span class="access-hidden pinterest">Pinterest</span>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main_wrap container">
+				<section class="container featured">
+					<article class="blog_item animate__animated animate__fadeInUp full_width image_only">
+						<h2 class="secondary_heading">
+							<a href="#">A Shell of a Good Time: Collecting Stories Like Sea Treasures</a>
+						</h2>
+						<figure class="image">
+							<img src="./ocean/kyle-loftus-fg_FSTo7ejw-unsplash.jpg" alt="lorem picsum random image" />
+						</figure>
+					</article>
+				</section>
+				<section class="container masonry-container">
+					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
+						<figure class="image">
+							<img src="./ocean/jeremy-bishop-1braZySlEKA-unsplash.jpg" alt="randon lorem picsum image" />
+						</figure>
+						<div class="blog_category">Food &amp; Drink</div>
+						<h2 class="secondary_heading">
+							<a href="">Lost at Sea: A Journey into the Unknown</a>
+						</h2>
+						<div class="blog_date">Janury 11, 2025</div>
+					</article>
+					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
+						<figure class="image">
+							<img src="./ocean/kyle-loftus-fg_FSTo7ejw-unsplash.jpg" alt="randon lorem picsum image" />
+						</figure>
+						<div class="blog_category">Food &amp; Drink</div>
+						<h2 class="secondary_heading">
+							<a href="#">Stunning Alternative to Traditional Cake</a>
+						</h2>
+						<div class="blog_date">Janury 11, 2025</div>
+					</article>
+					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
+						<figure class="image">
+							<img src="./ocean/frank-mckenna-OD9EOzfSOh0-unsplash.jpg" alt="randon lorem picsum image" />
+						</figure>
+						<div class="blog_category">Food &amp; Drink</div>
+						<h2 class="secondary_heading">
+							<a href="">Lost at Sea: A Journey into the Unknown</a>
+						</h2>
+						<div class="blog_date">Janury 11, 2025</div>
+					</article>
+					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
+						<figure class="image">
+							<img src="./ocean/joel-vodell-8Ogfqvw15Rg-unsplash.jpg" alt="randon lorem picsum image" />
+						</figure>
+						<div class="blog_category">Food &amp; Drink</div>
+						<h2 class="secondary_heading">
+							<a href="#">Stunning Alternative to Traditional Cake</a>
+						</h2>
+						<div class="blog_date">Janury 11, 2025</div>
+					</article>
+					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
+						<figure class="image">
+							<img src="./ocean/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="randon lorem picsum image" />
+						</figure>
+						<div class="blog_category">Food &amp; Drink</div>
+						<h2 class="secondary_heading">
+							<a href="">Lost at Sea: A Journey into the Unknown</a>
+						</h2>
+						<div class="blog_date">Janury 11, 2025</div>
+					</article>
+					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
+						<figure class="image">
+							<img src="./ocean/david-courbit-M8xxVih_V_U-unsplash.jpg" alt="randon lorem picsum image" />
+						</figure>
+						<div class="blog_category">Food &amp; Drink</div>
+						<h2 class="secondary_heading">
+							<a href="#">Stunning Alternative to Traditional Cake</a>
+						</h2>
+						<div class="blog_date">Janury 11, 2025</div>
+					</article>
+					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
+						<figure class="image">
+							<img src="./ocean/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg" alt="randon lorem picsum image" />
+						</figure>
+						<div class="blog_category">Food &amp; Drink</div>
+						<h2 class="secondary_heading">
+							<a href="">Lost at Sea: A Journey into the Unknown</a>
+						</h2>
+						<div class="blog_date">Janury 11, 2025</div>
+					</article>
+					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
+						<figure class="image">
+							<img src="./ocean/erastus-mccart-i6UdBLu_wwk-unsplash.jpg" alt="randon lorem picsum image" />
+						</figure>
+						<div class="blog_category">Food &amp; Drink</div>
+						<h2 class="secondary_heading">
+							<a href="#">Stunning Alternative to Traditional Cake</a>
+						</h2>
+						<div class="blog_date">Janury 11, 2025</div>
+					</article>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="main_logo">
+				<div class="primary_logo">
+					<span class="access-hidden">The Ocean Logo</span>
+					<svg aria-hidden="true" width="100%" height="100%" viewBox="0 0 2068 637" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2">
+						<g transform="matrix(1.44848,0,0,1.44848,-579.258,-521.71)">
+							<g transform="matrix(1,0,0,1,-291.948,155.623)">
+								<g transform="matrix(400,0,0,400,796.626,499.011)">
+									<path d="M0.224,0.187C0.598,0.257 0.699,-0.64 0.328,-0.732C0.034,-0.805 -0.183,0.111 0.224,0.187ZM0.263,0.151C0.023,0.201 0.145,-0.709 0.324,-0.693C0.475,-0.715 0.526,0.014 0.263,0.151Z" style="fill-rule: nonzero" />
+								</g>
+								<g transform="matrix(400,0,0,400,1057.03,499.011)">
+									<path d="M0.272,-0.323C0.272,-0.298 0.309,-0.281 0.318,-0.328C0.331,-0.394 0.34,-0.563 0.191,-0.537C-0.002,-0.503 -0.111,0.076 0.073,0.242C0.277,0.396 0.456,-0.054 0.543,-0.301C0.556,-0.338 0.527,-0.343 0.517,-0.317C0.426,-0.078 0.255,0.264 0.171,0.227C0.044,0.171 0.133,-0.292 0.237,-0.457C0.253,-0.483 0.309,-0.458 0.272,-0.323Z" style="fill-rule: nonzero" />
+								</g>
+								<g transform="matrix(400,0,0,400,1258.63,499.011)">
+									<path d="M0.108,-0.217C0.244,-0.255 0.323,-0.521 0.183,-0.523C-0.08,-0.526 -0.11,0.132 0.159,0.143C0.253,0.147 0.396,-0.018 0.505,-0.314C0.519,-0.352 0.48,-0.336 0.475,-0.323C0.368,-0.05 0.243,0.115 0.167,0.105C0.096,0.096 0.108,-0.067 0.108,-0.217ZM0.109,-0.251C0.113,-0.346 0.194,-0.516 0.219,-0.473C0.233,-0.448 0.193,-0.28 0.109,-0.251Z" style="fill-rule: nonzero" />
+								</g>
+								<g transform="matrix(400,0,0,400,1443.03,499.011)">
+									<path d="M0.3,-0.332C0.23,-0.156 0.183,0.273 0.31,0.323C0.434,0.372 0.605,-0.168 0.687,-0.304C0.696,-0.332 0.668,-0.35 0.648,-0.316C0.562,-0.177 0.442,0.212 0.344,0.271C0.252,0.326 0.418,-0.312 0.437,-0.4C0.437,-0.462 0.355,-0.528 0.316,-0.446C-0.024,-0.581 -0.155,-0.043 0.061,0.061C0.109,0.084 0.235,-0.181 0.3,-0.332ZM0.291,-0.407C0.249,-0.304 0.035,0.174 0.06,-0.051C0.071,-0.153 0.178,-0.472 0.291,-0.407Z" style="fill-rule: nonzero" />
+								</g>
+								<g transform="matrix(400,0,0,400,1695.83,499.011)">
+									<path d="M0.419,-0.527C0.286,-0.575 0.139,-0.131 0.097,-0.05C0.094,-0.068 0.16,-0.494 0.161,-0.503C0.166,-0.594 0.046,-0.593 0.025,-0.531C0.01,-0.46 -0.023,-0.172 -0.021,0.017C-0.02,0.054 0.053,0.133 0.093,0.066C0.257,-0.366 0.352,-0.481 0.372,-0.491C0.417,-0.514 0.422,-0.443 0.416,-0.412C0.368,-0.18 0.211,0.362 0.424,0.362C0.535,0.362 0.725,-0.046 0.803,-0.314C0.81,-0.34 0.774,-0.333 0.769,-0.314C0.674,0.008 0.503,0.291 0.437,0.318C0.335,0.312 0.631,-0.451 0.419,-0.527Z" style="fill-rule: nonzero" />
+								</g>
+							</g>
+							<g transform="matrix(1,0,0,1,0,32.577)">
+								<g transform="matrix(1,0,0,1,0,7.22919)">
+									<rect x="399.908" y="457.129" width="232.092" height="165.741" style="fill: #222" />
+								</g>
+								<g transform="matrix(1,0,0,1,192.333,-247.984)">
+									<g transform="matrix(100,0,0,100,248.81,833.058)">
+										<path d="M0.065,-0.734C0.053,-0.661 -0.136,0.287 0.08,0.382C0.223,0.445 0.339,0.135 0.472,-0.31C0.484,-0.349 0.456,-0.385 0.44,-0.331C0.334,0.019 0.194,0.403 0.114,0.339C0.073,0.306 0.122,-0.427 0.187,-0.753C0.202,-0.755 0.337,-0.76 0.359,-0.769C0.386,-0.78 0.374,-0.799 0.369,-0.805C0.313,-0.802 0.264,-0.797 0.194,-0.795C0.205,-0.859 0.214,-0.897 0.232,-0.995C0.248,-1.079 0.155,-1.057 0.136,-1.024C0.117,-1.004 0.098,-0.875 0.073,-0.774L-0.051,-0.767C-0.068,-0.751 -0.07,-0.737 -0.053,-0.727L0.065,-0.734Z" style="fill-rule: nonzero" />
+									</g>
+									<g transform="matrix(100,0,0,100,290.51,833.058)">
+										<path d="M-0.052,0.13C-0.045,0.204 0.068,0.167 0.074,0.125L0.101,-0.061C0.12,-0.114 0.291,-0.434 0.326,-0.377C0.359,-0.324 0.194,0.135 0.294,0.27C0.435,0.46 0.583,-0.024 0.671,-0.305C0.691,-0.369 0.649,-0.362 0.637,-0.321C0.533,0.037 0.402,0.35 0.347,0.268C0.31,0.213 0.562,-0.424 0.32,-0.424C0.252,-0.424 0.138,-0.223 0.108,-0.164L0.157,-0.503C0.374,-0.717 0.512,-1.143 0.344,-1.147C0.283,-1.148 0.212,-1.099 0.144,-0.948C0.011,-0.652 -0.013,-0.187 -0.052,0.13ZM0.16,-0.561C0.176,-0.879 0.293,-1.104 0.347,-1.103C0.418,-1.096 0.373,-0.808 0.16,-0.561Z" style="fill-rule: nonzero" />
+									</g>
+									<g transform="matrix(100,0,0,100,354.11,833.058)">
+										<path d="M0.108,-0.217C0.244,-0.255 0.323,-0.521 0.183,-0.523C-0.08,-0.526 -0.11,0.132 0.159,0.143C0.253,0.147 0.396,-0.018 0.505,-0.314C0.519,-0.352 0.48,-0.336 0.475,-0.323C0.368,-0.05 0.243,0.115 0.167,0.105C0.096,0.096 0.108,-0.067 0.108,-0.217ZM0.109,-0.251C0.113,-0.346 0.194,-0.516 0.219,-0.473C0.233,-0.448 0.193,-0.28 0.109,-0.251Z" style="fill-rule: nonzero" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<nav class="social_nav">
+				<ul>
+					<li class="social_item">
+						<a href="#">
+							<span class="access-hidden github">Github</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
+						</a>
+					</li>
+					<li class="social_item">
+						<a href="#">
+							<span class="access-hidden linkedin">LinkedIn</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
+						</a>
+					</li>
+					<li class="social_item">
+						<a href="#">
+							<span class="access-hidden instagram">Instagram</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+								<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+								<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+							</svg>
+						</a>
+					</li>
+					<li class="social_item">
+						<a href="#">
+							<span class="access-hidden pinterest">Pinterest</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="footer_nav main_nav">
+				<ul>
+					<li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Features</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Travel</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Lifestyle</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Fashion</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">About</a></li>
+					<li class="nav_item"><a class="nav_link" href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+	<script src="js/main.js"></script>
+</html>
