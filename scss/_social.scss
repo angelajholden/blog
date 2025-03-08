@@ -21,34 +21,22 @@
 				transition: fill 300ms ease-in-out;
 			}
 
-			.github + svg {
-				&:hover,
-				&:active,
-				&:focus {
+			&:hover,
+			&:active,
+			&:focus {
+				.github + svg {
 					fill: $github;
 				}
-			}
 
-			.linkedin + svg {
-				&:hover,
-				&:active,
-				&:focus {
+				.linkedin + svg {
 					fill: $linkedin;
 				}
-			}
 
-			.instagram + svg {
-				&:hover,
-				&:active,
-				&:focus {
+				.instagram + svg {
 					fill: $instagram;
 				}
-			}
 
-			.pinterest + svg {
-				&:hover,
-				&:active,
-				&:focus {
+				.pinterest + svg {
 					fill: $pinterest;
 				}
 			}
