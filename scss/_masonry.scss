@@ -1,12 +1,18 @@
+.masonry .main_wrap {
+	align-items: stretch;
+	max-width: 100%;
+	padding: 3rem;
+
+	@media (max-width: 1024px) {
+		padding: 0;
+	}
+}
+
 .featured,
 .masonry-container {
-	@include flex-item(49%);
-	height: 2500px;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	align-items: center;
+	@include flex-item(49.5%);
 
-	@media (max-width: 960px) {
+	@media (max-width: 1024px) {
 		@include flex-item(100%);
 		padding: 1rem;
 	}
@@ -22,11 +28,30 @@
 }
 
 .masonry-container {
+	columns: 3 auto;
+
 	.half_width {
-		@include flex-item(44%);
+		width: 95%;
+		margin-left: auto;
+		break-inside: avoid;
 	}
+
 	.secondary_heading {
 		font-size: 1.25rem;
+	}
+
+	@media (max-width: 1980px) {
+		columns: 2 auto;
+	}
+
+	@media (max-width: 1024px) {
+		.half_width {
+			width: 100%;
+		}
+
+		.secondary_heading {
+			font-size: 1.1rem;
+		}
 	}
 
 	.image {
