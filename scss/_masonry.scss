@@ -54,6 +54,12 @@
 		}
 	}
 
+	@media (max-width: 960px) {
+		.half_width {
+			margin-bottom: 2rem;
+		}
+	}
+
 	.image {
 		margin: 0 0 1rem;
 		aspect-ratio: auto;
