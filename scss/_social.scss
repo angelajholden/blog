@@ -1,44 +1,50 @@
-.social_nav {
-	ul {
+ul {
+	.social_nav & {
 		@include flex-container;
 		margin: 0;
 		padding: 0;
 	}
+}
 
-	.social_item {
+.social_item {
+	.social_nav & {
 		display: block;
 		margin: 0 0.5rem;
+	}
+}
 
-		a {
-			display: block;
-			padding: 11.5px; // makes the icon tap target 48px x 48px for a11y
+svg {
+	.social_nav & {
+		display: block;
+		width: 25px;
+		height: 25px;
+		fill: $black;
+		transition: fill 300ms ease-in-out;
+	}
+}
 
-			svg {
-				display: block;
-				width: 25px;
-				height: 25px;
-				fill: $black;
-				transition: fill 300ms ease-in-out;
+a {
+	.social_nav & {
+		display: block;
+		padding: 11.5px; // makes the icon tap target 48px x 48px for a11y
+
+		&:hover,
+		&:active,
+		&:focus {
+			.github + svg {
+				fill: $github;
 			}
 
-			&:hover,
-			&:active,
-			&:focus {
-				.github + svg {
-					fill: $github;
-				}
+			.linkedin + svg {
+				fill: $linkedin;
+			}
 
-				.linkedin + svg {
-					fill: $linkedin;
-				}
+			.instagram + svg {
+				fill: $instagram;
+			}
 
-				.instagram + svg {
-					fill: $instagram;
-				}
-
-				.pinterest + svg {
-					fill: $pinterest;
-				}
+			.pinterest + svg {
+				fill: $pinterest;
 			}
 		}
 	}
