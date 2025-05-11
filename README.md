@@ -1,6 +1,12 @@
 # :ocean: The Ocean Static HTML Blog Website
 
-This is a static blog website built from a Photoshop mickup purchased on [Envato/ThemeForest](https://themeforest.net/item/ocean-personal-blog-template-for-travelers-and-dreamers-/15702539) called Ocean.
+This is a simple, clean blog site built with HTML, CSS, and vanilla JavaScript.  
+It’s based on a Photoshop mockup called [Ocean – Personal Blog Template for Travelers and Dreamers](https://themeforest.net/item/ocean-personal-blog-template-for-travelers-and-dreamers-/15702539), purchased from Envato/ThemeForest.
+
+The goal of this project is to turn a static design into accessible, modern code — and make it easy for anyone to customize or learn from.  
+It’s mobile responsive and includes a custom CSS masonry layout for the blog archive, which I’m especially proud of.
+
+_This project is part of a free, open-source series focused on helping newer developers practice HTML/CSS with real-world examples._
 
 ## :red_circle: YouTube
 
