@@ -1,6 +1,14 @@
 # :ocean: The Ocean Static HTML Blog Website
 
-This is a simple, clean blog site built with HTML, CSS, and vanilla JavaScript.  
+![HTML](https://img.shields.io/badge/HTML5-1E9FB4.svg?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1E9FB4.svg?style=flat&logo=css3&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-1E9FB4.svg?style=flat&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-1E9FB4.svg?style=flat&logo=javascript&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-1E9FB4.svg?style=flat&logo=open-source-initiative&logoColor=white)
+[![Watch the Build](https://img.shields.io/badge/YouTube-Watch-1E9FB4.svg?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLiEcEGGtRVumb3GPMVk2JYG687ysA3vN9)
+
+This is a simple, clean blog site built with HTML, CSS, and vanilla JavaScript.
+
 It’s based on a Photoshop mockup called [Ocean – Personal Blog Template for Travelers and Dreamers](https://themeforest.net/item/ocean-personal-blog-template-for-travelers-and-dreamers-/15702539), purchased from Envato/ThemeForest.
 
 The goal of this project is to turn a static design into accessible, modern code — and make it easy for anyone to customize or learn from.  
@@ -16,7 +24,7 @@ _This project is part of a free, open-source series focused on helping newer dev
 
 -   https://blog-website-3dcdb76fe42e.herokuapp.com/
 
-## :zap: How to run
+## :rocket: Quick Start
 
 ### :white_check_mark: Git Clone
 
@@ -36,7 +44,7 @@ sass --watch scss/styles.scss:styles.css --style compressed
 
 Or you can use the VS Code extension [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass).
 
-## :round_pushpin: License
+## :scroll: License
 
 This project is released as an open-source, free-to-use static website template under the [MIT License](LICENSE.md). You are welcome to **use, modify, and distribute** the code for personal or commercial projects, with or without attribution.
 
