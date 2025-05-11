@@ -2,6 +2,14 @@
 
 This is a static blog website built from a Photoshop mickup purchased on [Envato/ThemeForest](https://themeforest.net/item/ocean-personal-blog-template-for-travelers-and-dreamers-/15702539) called Ocean.
 
+## :red_circle: YouTube
+
+:movie_camera: **Watch the build in action** on my [YouTube channel](https://www.youtube.com/@angelajholden) — or check out the [project playlist](https://www.youtube.com/playlist?list=PLiEcEGGtRVumb3GPMVk2JYG687ysA3vN9) to follow the full step-by-step process.
+
+## :link: See the site on Heroku
+
+-   https://blog-website-3dcdb76fe42e.herokuapp.com/
+
 ## :zap: How to run
 
 ### :white_check_mark: Git Clone
