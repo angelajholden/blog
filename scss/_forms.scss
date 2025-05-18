@@ -15,7 +15,16 @@ input[type="email"],
 input[type="tel"],
 input[type="password"],
 input[type="url"],
-input[type="num"] {
+input[type="number"],
+input[type="search"],
+input[type="time"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="color"],
+textarea,
+select {
 	.form & {
 		width: 100%;
 		background-color: $white;
@@ -25,16 +34,69 @@ input[type="num"] {
 	}
 }
 
-input[type="search"] {
+input[type="color"],
+input[type="file"],
+input[type="hidden"],
+input[type="image"],
+input[type="range"] {
 	.form & {
-		width: 100%;
-		padding: 1rem;
-		border: none;
-		border-bottom: 1px solid $gray;
-		text-align: center;
+		display: block;
+		width: 100px;
+		padding: 0;
+		margin-bottom: 1rem;
+	}
+}
 
-		&::placeholder {
-			color: $black;
+input[type="checkbox"],
+input[type="radio"] {
+	.form & {
+		margin-bottom: 1rem;
+	}
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	.form & {
+		display: block;
+		width: auto;
+		padding: 1rem;
+		margin-bottom: 1rem;
+		background-color: transparent;
+		border: 2px solid $black;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $black;
+		cursor: pointer;
+		transition: all 300ms ease-in-out;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $black;
+			color: $white;
+		}
+	}
+}
+
+.select {
+	.form & {
+		position: relative;
+
+		select {
+			margin-bottom: 0;
+		}
+
+		svg {
+			display: block;
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			top: 50%;
+			right: 4px;
+			transform: translateY(-50%);
+			background-color: $white;
+			pointer-events: none;
 		}
 	}
 }
@@ -61,8 +123,23 @@ input[type="search"] {
 	}
 }
 
+// Search Drawer Form Styles
+input[type="search"] {
+	.form_search & {
+		width: 100%;
+		padding: 1rem;
+		border: none;
+		border-bottom: 1px solid $gray;
+		text-align: center;
+
+		&::placeholder {
+			color: $black;
+		}
+	}
+}
+
 .submit_button {
-	.form & {
+	.form_search & {
 		position: absolute;
 		top: 50%;
 		right: 0;
