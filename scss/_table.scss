@@ -54,19 +54,31 @@ tr {
 
 	th {
 		.table & {
-			padding: 0;
-
-			div {
-				padding: 0.5rem;
-			}
+			background-color: $black;
+			color: $white;
 
 			&::before {
-				content: attr(data-label);
+				content: attr(data-label) ":";
+				display: inline-block;
+				margin-right: 5px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	td {
+		.table & {
+			&::before {
+				content: attr(data-label) ":";
 				display: block;
-				padding: 0.5rem;
-				margin-bottom: 0.5rem;
-				background-color: $black;
-				color: $white;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				color: $links;
+			}
+
+			&:nth-of-type(even) {
+				background-color: $lt-gray;
 			}
 		}
 	}

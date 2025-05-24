@@ -119,6 +119,11 @@
 			margin: 0;
 		}
 
+		img {
+			object-fit: cover;
+			width: 100%;
+		}
+
 		.secondary_heading {
 			position: absolute;
 			bottom: -65px;

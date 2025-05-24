@@ -60,10 +60,11 @@ blockquote {
 }
 
 pre {
-	white-space: wrap;
+	white-space: pre;
 	background-color: #f8f8f8;
 	padding: 2rem;
 	border-radius: 10px;
+	overflow-x: scroll;
 }
 
 hr {

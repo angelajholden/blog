@@ -110,14 +110,24 @@
 
 .blog_comment_count {
 	.blog_layout & {
-		@include flex-item(25%);
 		margin: 0;
+	}
+}
+
+.blog_dbl-border {
+	.blog_layout & {
+		display: block;
+		height: 45px;
+		border-left: 5px double $gray;
+
+		@media (max-width: 960px) {
+			display: none;
+		}
 	}
 }
 
 .blog_tagged_items {
 	.blog_layout & {
-		@include flex-item(40%);
 		margin: 0;
 	}
 }
