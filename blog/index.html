@@ -9,7 +9,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="../styles.css" />
 	</head>
-	<body>
+	<body class="blog">
 		<header class="header">
 			<div class="top_header">
 				<nav class="social_nav top_left">
@@ -559,7 +559,7 @@ hr {
 							</nav>
 						</div>
 					</article>
-					<div class="author-box">
+					<div class="author-box container">
 						<figure class="image">
 							<img src="https://picsum.photos/200/300" alt="author box profile image" />
 						</figure>
@@ -569,9 +569,9 @@ hr {
 						</div>
 					</div>
 					<div class="related-posts">
-						<h2 class="secondary-heading">Related Posts</h2>
-						<div class="wrap">
-							<article class="related_item animate__animated one_third" data-animation="animate__fadeInUp">
+						<h2 class="secondary-heading blog_heading">Related Posts</h2>
+						<div class="wrap container">
+							<article class="related_item one_third">
 								<figure class="image">
 									<img src="../ocean/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="randon lorem picsum image" />
 								</figure>
@@ -580,7 +580,7 @@ hr {
 									<a href="#">The High Tide Chronicles: Life Moves Like the Ocean</a>
 								</h2>
 							</article>
-							<article class="related_item animate__animated one_third" data-animation="animate__fadeInUp">
+							<article class="related_item one_third">
 								<figure class="image">
 									<img src="../ocean/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="randon lorem picsum image" />
 								</figure>
@@ -589,7 +589,7 @@ hr {
 									<a href="#">The High Tide Chronicles: Life Moves Like the Ocean</a>
 								</h2>
 							</article>
-							<article class="related_item animate__animated one_third" data-animation="animate__fadeInUp">
+							<article class="related_item one_third">
 								<figure class="image">
 									<img src="../ocean/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="randon lorem picsum image" />
 								</figure>
@@ -601,37 +601,53 @@ hr {
 						</div>
 					</div>
 					<div class="comments">
-						<h2 class="secondary-heading">Comments</h2>
-						<div class="wrap">
+						<h2 class="secondary-heading blog_heading">Comments</h2>
+						<div class="wrap container">
 							<figure class="image">
 								<img src="https://picsum.photos/200/300" alt="author box profile image" />
 							</figure>
 							<div class="comment-box-content">
-								<div class="tertiary-heading">Angela Holden</div>
-								<time class="comment-date" datetime="2025-05-17">Saturday, May 17, 2025</time>
-								<span class="reply-link">Reply</span>
+								<div class="comment-meta">
+									<div class="title-date">
+										<div class="tertiary-heading">Angela Holden</div>
+										<time class="comment-date" datetime="2025-05-17">Saturday, May 17, 2025</time>
+									</div>
+									<div class="reply-link">
+										<a href="#">Reply</a>
+									</div>
+								</div>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sed maiores amet, perspiciatis nemo laborum quam corrupti perferendis dolorem dicta dolor esse. Totam ipsam beatae eveniet architecto sapiente quo quod!</p>
 							</div>
 						</div>
-						<div class="wrap">
+						<div class="wrap container">
 							<figure class="image">
 								<img src="https://picsum.photos/200/300" alt="author box profile image" />
 							</figure>
 							<div class="comment-box-content">
-								<div class="tertiary-heading">Angela Holden</div>
-								<time class="comment-date" datetime="2025-05-17">Saturday, May 17, 2025</time>
-								<span class="reply-link">Reply</span>
+								<div class="comment-meta">
+									<div class="title-date">
+										<div class="tertiary-heading">Angela Holden</div>
+										<time class="comment-date" datetime="2025-05-17">Saturday, May 17, 2025</time>
+									</div>
+									<div class="reply-link">
+										<a href="#">Reply</a>
+									</div>
+								</div>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sed maiores amet, perspiciatis nemo laborum quam corrupti perferendis dolorem dicta dolor esse. Totam ipsam beatae eveniet architecto sapiente quo quod!</p>
 							</div>
 						</div>
 					</div>
 					<div class="comment-form">
-						<h2 class="secondary-heading">Leave a Comment</h2>
-						<form action="" class="form">
-							<label for="name" class="access-hidden">Name</label>
-							<input type="text" id="name" placeholder="Name" required />
-							<label for="email" class="access-hidden">Email</label>
-							<input type="email" id="email" placeholder="Email" required />
+						<h2 class="secondary-heading blog_heading">Leave a Comment</h2>
+						<form action="" class="form container">
+							<div class="half_width">
+								<label for="name" class="access-hidden">Name</label>
+								<input type="text" id="name" placeholder="Name" required />
+							</div>
+							<div class="half_width">
+								<label for="email" class="access-hidden">Email</label>
+								<input type="email" id="email" placeholder="Email" required />
+							</div>
 							<label for="textarea" class="access-hidden">Leave a Comment</label>
 							<textarea name="textarea" id="textarea" required></textarea>
 							<button type="button" class="button">Submit</button>
