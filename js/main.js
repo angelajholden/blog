@@ -109,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
+	// Animate CSS transitions
 	const observerOptions = {
 		root: null, // Use the viewport as the container
 		rootMargin: "0px",
@@ -135,4 +136,49 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Attach observer to each element
 	const elements = document.querySelectorAll(".animate__animated");
 	elements.forEach((el) => observer.observe(el));
+
+	// Slider
+	const sliderItems = document.querySelectorAll(".slider-item");
+	const next = document.querySelector(".slide-next");
+	const prev = document.querySelector(".slide-prev");
+	const currentSpan = document.querySelector(".slider-meta span:first-child");
+	const totalSpan = document.querySelector(".slider-meta span:last-child");
+	const slider = document.querySelector(".slider");
+
+	let currentIndex = 0;
+	const totalSlides = sliderItems.length;
+
+	function updateSlider(index) {
+		sliderItems.forEach((slide, i) => {
+			slide.classList.toggle("active", i === index);
+			slide.setAttribute("aria-label", `Slide ${i + 1} of ${totalSlides}`);
+			slide.setAttribute("aria-hidden", i !== index);
+		});
+		currentSpan.textContent = index + 1;
+	}
+
+	function showNext() {
+		currentIndex = (currentIndex + 1) % totalSlides;
+		updateSlider(currentIndex);
+	}
+
+	function showPrev() {
+		currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+		updateSlider(currentIndex);
+	}
+
+	next.addEventListener("click", showNext);
+	prev.addEventListener("click", showPrev);
+
+	slider.addEventListener("keydown", (e) => {
+		if (e.key === "ArrowRight") {
+			showNext();
+		} else if (e.key === "ArrowLeft") {
+			showPrev();
+		}
+	});
+
+	// Initialize
+	totalSpan.textContent = totalSlides;
+	updateSlider(currentIndex);
 });
