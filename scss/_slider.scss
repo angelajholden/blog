@@ -26,14 +26,15 @@
 .slide-next,
 .slide-prev {
 	.slider & {
-		width: 40px;
-		height: 40px;
+		width: 48px;
+		height: 48px;
 		padding: 0.5rem;
 		margin: 0;
 		border-radius: 50%;
 
 		svg {
 			display: block;
+			margin: 0 auto;
 		}
 	}
 }
@@ -73,8 +74,6 @@
 	.slider-list & {
 		margin: 0;
 		background-image: linear-gradient($black, #000);
-		overflow: hidden;
-		border-radius: 10px;
 
 		img {
 			object-fit: contain;
@@ -89,7 +88,6 @@
 			width: 100%;
 			padding: 1rem;
 			background-color: rgba($color: $black, $alpha: 0.5);
-			border-radius: 0 0 10px 10px;
 			z-index: 1;
 
 			@media (max-width: 768px) {
