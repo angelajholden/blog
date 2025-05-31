@@ -15,3 +15,5 @@
 -   update the page title and descriptions
 -   make an svg signature
 -   need clamp() for .secondary-heading font-size
+-   make the height of the form textarea taller
+-   gap inbetween inputs on form is too big on full_width layout

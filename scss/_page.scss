@@ -46,3 +46,37 @@ p {
 		margin: 0 0 1rem;
 	}
 }
+
+.contact_container {
+	.page & {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@media (max-width: 960px) {
+			flex-direction: column;
+		}
+	}
+}
+
+.form_container {
+	.page & {
+		width: 70%;
+
+		@media (max-width: 960px) {
+			width: 100%;
+		}
+	}
+}
+
+.image.ad {
+	.page & {
+		width: 25%;
+		aspect-ratio: 1 / 1;
+
+		@media (max-width: 960px) {
+			width: 100%;
+		}
+	}
+}
