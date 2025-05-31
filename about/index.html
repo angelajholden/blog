@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About Page | HTML &amp; SCSS Blog Website</title>
+		<title>Page | HTML &amp; SCSS Blog Website</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="../styles.css" />
 	</head>
-	<body>
+	<body class="blog page">
 		<header class="header">
 			<div class="top_header">
 				<nav class="social_nav top_left">
@@ -45,7 +45,7 @@
 				</nav>
 				<div class="main_logo">
 					<h1 class="primary_logo">
-						<a href="/">
+						<a class="logo_link" href="/">
 							<span class="access-hidden">The Ocean Logo</span>
 							<svg aria-hidden="true" width="100%" height="100%" viewBox="0 0 2068 637" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2">
 								<g transform="matrix(1.44848,0,0,1.44848,-579.258,-521.71)">
@@ -97,9 +97,9 @@
 					</button>
 					<button class="button_icon button_menu">
 						<span class="access-hidden">Menu</span>
-						<div></div>
-						<div></div>
-						<div></div>
+						<div class="button_line"></div>
+						<div class="button_line"></div>
+						<div class="button_line"></div>
 					</button>
 				</div>
 			</div>
@@ -114,12 +114,12 @@
 				</form>
 				<button class="button_icon button_close">
 					<span class="access-hidden">Close Search</span>
-					<div></div>
-					<div></div>
+					<div class="button_line"></div>
+					<div class="button_line"></div>
 				</button>
 			</div>
 			<nav class="main_nav">
-				<ul>
+				<ul class="nav_container">
 					<li class="nav_item"><a class="nav_link" href="../home/">Home</a></li>
 					<li class="nav_item"><a class="nav_link" href="../masonry/">Masonry</a></li>
 					<li class="nav_item"><a class="nav_link" href="../blog-slider/">Blog Slider</a></li>
@@ -131,7 +131,7 @@
 			</nav>
 			<div class="mobile_off_canvas">
 				<nav class="mobile_nav">
-					<ul>
+					<ul class="nav_container">
 						<li class="nav_item"><a class="nav_link" href="../home/">Home</a></li>
 						<li class="nav_item"><a class="nav_link" href="../masonry/">Masonry</a></li>
 						<li class="nav_item"><a class="nav_link" href="../blog-slider/">Blog Slider</a></li>
@@ -184,552 +184,24 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="hero animate__animated animate__fadeIn">
-				<article class="hero_item">
-					<a href="#">
-						<figure class="image">
-							<img src="../ocean/david-courbit-M8xxVih_V_U-unsplash.jpg" alt="placeholder text random lorem picsum" />
-						</figure>
-						<div class="item_title">
-							<h2 class="secondary_heading">Seas the Day: Finding Joy in the Rhythm of the Waves</h2>
-						</div>
-					</a>
-				</article>
-				<article class="hero_item">
-					<a href="#">
-						<figure class="image">
-							<img src="../ocean/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg" alt="placeholder text random lorem picsum" />
-						</figure>
-						<div class="item_title">
-							<h2 class="secondary_heading">Tales from the Deep: Secrets Hidden Beneath the Surface</h2>
-						</div>
-					</a>
-				</article>
-				<article class="hero_item">
-					<a href="#">
-						<figure class="image">
-							<img src="../ocean/frank-mckenna-OD9EOzfSOh0-unsplash.jpg" alt="placeholder text random lorem picsum" />
-						</figure>
-						<div class="item_title">
-							<h2 class="secondary_heading">Message in a Blog Post: Letters to the Sea and Beyond</h2>
-						</div>
-					</a>
-				</article>
-			</section>
 			<div class="main_wrap container">
 				<section class="blog_layout container">
 					<article class="blog_item animate__animated animate__fadeInUp full_width">
-						<div class="blog_category">Food &amp; Drink</div>
-						<h2 class="secondary_heading">
-							<a href="#">Caught in the Current: Drifting Between Dreams and Reality</a>
-						</h2>
-						<div class="blog_date">Saturday, Janury 11, 2025</div>
-						<figure class="image">
+						<h1 class="secondary_heading">About</h1>
+						<figure class="image heading">
 							<img src="../ocean/gatis-marcinkevics-a5uptAdUmjE-unsplash.jpg" alt="randon lorem picsum image" />
 						</figure>
-						<div class="blog_description">
-							<p>
-								Lorem ipsum
-								<a href="https://google.com">dolor sit,</a>
-								amet consectetur adipisicing elit. Quo est ipsam distinctio nesciunt natus consequuntur accusamus pariatur, autem, amet vitae eum, laboriosam aliquam deserunt. Molestias, assumenda. At ratione molestiae totam sequi odit dicta iste iure alias iusto, atque, dolorem, quis mollitia commodi aperiam laboriosam ducimus voluptas laudantium incidunt eaque quisquam!
-							</p>
-							<p class="read_more">
-								<a href="#">
-									Continue Reading
-									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100" /></svg>
-								</a>
-							</p>
+						<div class="page_intro">
+							<h2 class="secondary_heading">Hello, my name is Angela.</h2>
+							<p>If you can dream it, you can do it.</p>
 						</div>
-						<div class="blog_links">
-							<div class="blog_comment_count">
-								<span class="comment_count">12</span>
-								<span class="comments">Comments</span>
-							</div>
-							<div class="blog_tagged_items">
-								<span class="tags">Tagged:</span>
-								<nav class="nav_tags">
-									<ul>
-										<li class="tag_item"><a class="tag_link" href="#">Lifestyle</a></li>
-										<li class="tag_item"><a class="tag_link" href="#">Food</a></li>
-										<li class="tag_item"><a class="tag_link" href="#">Drink</a></li>
-									</ul>
-								</nav>
-							</div>
-							<nav class="social_nav blog_right">
-								<ul>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden github">Github</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden linkedin">LinkedIn</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden instagram">Instagram</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-												<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-												<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-											</svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden pinterest">Pinterest</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
-										</a>
-									</li>
-								</ul>
-							</nav>
+						<div class="blog_content two_columns">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi magnam corrupti. Consequatur sint provident nobis, quaerat officiis sunt quod soluta? Inventore possimus, sit dolor delectus porro harum pariatur vero, distinctio culpa corporis corrupti ratione? Quam necessitatibus iure voluptate odio, debitis atque, neque dicta repellendus totam praesentium voluptatum aspernatur ut minus nemo sapiente. Voluptatum autem sed atque consequuntur distinctio fugit molestias aliquam magni reiciendis asperiores, eum nobis doloremque adipisci. Expedita ad numquam eligendi, facilis earum iusto praesentium, libero consequuntur dolore doloribus fugit nam omnis voluptates alias esse laboriosam quam incidunt inventore? Et, temporibus. Tenetur quam nisi velit ducimus officia beatae, aut et error necessitatibus distinctio obcaecati perspiciatis ipsum nesciunt vero explicabo. Voluptates molestias officiis similique tempora quos adipisci numquam explicabo dolore est a, optio laboriosam nobis corrupti quibusdam libero incidunt accusantium. Voluptate laborum perspiciatis ex ipsa mollitia obcaecati minus dolor est, aspernatur voluptas itaque excepturi repudiandae atque. Modi ullam magnam, explicabo temporibus officia fugit quam maxime neque? Quis quas non nostrum reiciendis id ea inventore consequuntur accusamus recusandae saepe! Numquam, cum distinctio ducimus quas voluptas accusamus dolores quae eum aliquam reprehenderit ipsam! Facere sint suscipit fuga quos, cum itaque cumque fugit id unde facilis dolore mollitia perferendis rem vel excepturi.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint asperiores modi magnam sed vel. Optio porro dolorem quidem modi saepe esse suscipit, explicabo quam eius tempore tempora cupiditate quasi!</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam rerum consequuntur nisi quasi, molestias tempora cum debitis ipsa magni dolore in veniam saepe facilis laboriosam velit, impedit praesentium dolores itaque esse voluptas labore aperiam explicabo eum. Atque expedita et deleniti, doloremque aperiam numquam culpa autem? Nobis dolor rerum distinctio beatae!</p>
 						</div>
 					</article>
-					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
-						<figure class="image">
-							<img src="../ocean/jeremy-bishop-1braZySlEKA-unsplash.jpg" alt="randon lorem picsum image" />
-						</figure>
-						<div class="blog_category">Food &amp; Drink</div>
-						<h2 class="secondary_heading">
-							<a href="">Lost at Sea: A Journey into the Unknown</a>
-						</h2>
-						<div class="blog_date">Janury 11, 2025</div>
-						<div class="blog_description">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo est ipsam distinctio nesciunt natus consequuntur accusamus pariatur, autem, amet vitae eum, laboriosam aliquam deserunt. Molestias, assumenda. At ratione molestiae totam sequi odit dicta iste iure alias iusto, atque, dolorem, quis mollitia commodi aperiam laboriosam ducimus voluptas laudantium incidunt eaque quisquam!</p>
-						</div>
-						<div class="blog_links">
-							<nav class="social_nav">
-								<ul>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden github">Github</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden linkedin">LinkedIn</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden instagram">Instagram</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-												<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-												<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-											</svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden pinterest">Pinterest</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</article>
-					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
-						<figure class="image">
-							<img src="../ocean/kino--MWoUTlQcHA-unsplash.jpg" alt="randon lorem picsum image" />
-						</figure>
-						<div class="blog_category">Food &amp; Drink</div>
-						<h2 class="secondary_heading">
-							<a href="#">Stunning Alternative to Traditional Cake</a>
-						</h2>
-						<div class="blog_date">Janury 11, 2025</div>
-						<div class="blog_description">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo est ipsam distinctio nesciunt natus consequuntur accusamus pariatur, autem, amet vitae eum, laboriosam aliquam deserunt. Molestias, assumenda. At ratione molestiae totam sequi odit dicta iste iure alias iusto, atque, dolorem, quis mollitia commodi aperiam laboriosam ducimus voluptas laudantium incidunt eaque quisquam!</p>
-						</div>
-						<div class="blog_links">
-							<nav class="social_nav">
-								<ul>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden github">Github</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden linkedin">LinkedIn</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden instagram">Instagram</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-												<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-												<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-											</svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden pinterest">Pinterest</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</article>
-					<article class="blog_item animate__animated full_width image_only" data-animation="animate__fadeInUp">
-						<h2 class="secondary_heading">
-							<a href="#">A Shell of a Good Time: Collecting Stories Like Sea Treasures</a>
-						</h2>
-						<figure class="image">
-							<img src="../ocean/kyle-loftus-fg_FSTo7ejw-unsplash.jpg" alt="lorem picsum random image" />
-						</figure>
-					</article>
-					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
-						<figure class="image">
-							<img src="../ocean/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="randon lorem picsum image" />
-						</figure>
-						<div class="blog_category">Food &amp; Drink</div>
-						<h2 class="secondary_heading">
-							<a href="#">The High Tide Chronicles: Life Moves Like the Ocean</a>
-						</h2>
-						<div class="blog_date">Janury 11, 2025</div>
-						<div class="blog_description">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo est ipsam distinctio nesciunt natus consequuntur accusamus pariatur, autem, amet vitae eum, laboriosam aliquam deserunt. Molestias, assumenda. At ratione molestiae totam sequi odit dicta iste iure alias iusto, atque, dolorem, quis mollitia commodi aperiam laboriosam ducimus voluptas laudantium incidunt eaque quisquam!</p>
-						</div>
-						<div class="blog_links">
-							<nav class="social_nav">
-								<ul>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden github">Github</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden linkedin">LinkedIn</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden instagram">Instagram</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-												<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-												<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-											</svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden pinterest">Pinterest</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</article>
-					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
-						<figure class="image">
-							<img src="../ocean/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg" alt="randon lorem picsum image" />
-						</figure>
-						<div class="blog_category">Food &amp; Drink</div>
-						<h2 class="secondary_heading">
-							<a href="#">Drifting, Dreaming, Doing: Letting the Waves Guide My Way</a>
-						</h2>
-						<div class="blog_date">Janury 11, 2025</div>
-						<div class="blog_description">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo est ipsam distinctio nesciunt natus consequuntur accusamus pariatur, autem, amet vitae eum, laboriosam aliquam deserunt. Molestias, assumenda. At ratione molestiae totam sequi odit dicta iste iure alias iusto, atque, dolorem, quis mollitia commodi aperiam laboriosam ducimus voluptas laudantium incidunt eaque quisquam!</p>
-						</div>
-						<div class="blog_links">
-							<nav class="social_nav">
-								<ul>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden github">Github</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden linkedin">LinkedIn</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden instagram">Instagram</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-												<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-												<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-											</svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden pinterest">Pinterest</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</article>
-					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
-						<figure class="image">
-							<img src="../ocean/silas-baisch-K785Da4A_JA-unsplash.jpg" alt="randon lorem picsum image" />
-						</figure>
-						<div class="blog_category">Food &amp; Drink</div>
-						<h2 class="secondary_heading">
-							<a href="#">Wanderlust &amp; Waves: Adventures in Saltwater</a>
-						</h2>
-						<div class="blog_date">Janury 11, 2025</div>
-						<div class="blog_description">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo est ipsam distinctio nesciunt natus consequuntur accusamus pariatur, autem, amet vitae eum, laboriosam aliquam deserunt. Molestias, assumenda. At ratione molestiae totam sequi odit dicta iste iure alias iusto, atque, dolorem, quis mollitia commodi aperiam laboriosam ducimus voluptas laudantium incidunt eaque quisquam!</p>
-						</div>
-						<div class="blog_links">
-							<nav class="social_nav">
-								<ul>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden github">Github</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden linkedin">LinkedIn</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden instagram">Instagram</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-												<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-												<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-											</svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden pinterest">Pinterest</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</article>
-					<article class="blog_item animate__animated half_width" data-animation="animate__fadeInUp">
-						<figure class="image">
-							<img src="../ocean/david-clode-JdNixbsLwS8-unsplash.jpg" alt="randon lorem picsum image" />
-						</figure>
-						<div class="blog_category">Food &amp; Drink</div>
-						<h2 class="secondary_heading">
-							<a href="#">Seagulls &amp; Saltwater: Little Joys from the Edge of the Shore</a>
-						</h2>
-						<div class="blog_date">Janury 11, 2025</div>
-						<div class="blog_description">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo est ipsam distinctio nesciunt natus consequuntur accusamus pariatur, autem, amet vitae eum, laboriosam aliquam deserunt. Molestias, assumenda. At ratione molestiae totam sequi odit dicta iste iure alias iusto, atque, dolorem, quis mollitia commodi aperiam laboriosam ducimus voluptas laudantium incidunt eaque quisquam!</p>
-						</div>
-						<div class="blog_links">
-							<nav class="social_nav">
-								<ul>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden github">Github</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden linkedin">LinkedIn</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden instagram">Instagram</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-												<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-												<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-											</svg>
-										</a>
-									</li>
-									<li class="social_item">
-										<a href="#">
-											<span class="access-hidden pinterest">Pinterest</span>
-											<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</article>
-					<div class="blog_pagination full_width">
-						<nav class="nav_pagination">
-							<ul>
-								<li class="pagination_item older_posts">
-									<a class="pagination_link" href="#">
-										<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292" /></svg>
-										Older Posts
-									</a>
-								</li>
-								<li class="pagination_item newer_posts">
-									<a class="pagination_link" href="#">
-										Newer Posts
-										<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100" /></svg>
-									</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
 				</section>
-				<aside class="sidebar_layout animate__animated animate__fadeInUp">
-					<div class="sidebar_item about">
-						<h3 class="tertiary_heading">About Me</h3>
-						<div class="dashed_border"></div>
-						<figure class="image">
-							<img src="../ocean/erastus-mccart-i6UdBLu_wwk-unsplash.jpg" alt="random lorem picsum image" />
-						</figure>
-						<p class="sidebar_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime distinctio numquam voluptatibus et sed nam iusto expedita voluptas id libero qui sequi dolore officiis, molestias ratione, repellendus earum! Voluptatem.</p>
-						<div class="sidebar_signature">Angela J Holden</div>
-					</div>
-					<div class="sidebar_item newsletter">
-						<h3 class="tertiary_heading">Newsletter</h3>
-						<div class="dashed_border"></div>
-						<form action="#" class="form">
-							<label class="access-hidden" for="email">Your Email Address</label>
-							<input type="email" id="email" name="email" placeholder="Your Email Address" />
-							<button class="button subscribe">Subscribe</button>
-						</form>
-					</div>
-					<div class="sidebar_item latest_posts">
-						<h3 class="tertiary_heading">Latest Posts</h3>
-						<div class="dashed_border"></div>
-						<article class="sidebar_blog_item container">
-							<figure class="image">
-								<img src="../ocean/joel-vodell-8Ogfqvw15Rg-unsplash.jpg" alt="random lorem picsum thumbnail image" />
-							</figure>
-							<div class="sidebar_blog_copy half_width">
-								<h4 class="sidebar_blog_title">Best Beaches in Sydney For The Easter Long Weekend</h4>
-								<div class="sidebar_blog_category">Fashion</div>
-							</div>
-						</article>
-						<article class="sidebar_blog_item container">
-							<figure class="image">
-								<img src="../ocean/frank-mckenna-OD9EOzfSOh0-unsplash.jpg" alt="random lorem picsum thumbnail image" />
-							</figure>
-							<div class="sidebar_blog_copy half_width">
-								<h4 class="sidebar_blog_title">Best Beaches in Sydney For The Easter Long Weekend</h4>
-								<div class="sidebar_blog_category">Fashion</div>
-							</div>
-						</article>
-						<article class="sidebar_blog_item container">
-							<figure class="image">
-								<img src="../ocean/gatis-marcinkevics-a5uptAdUmjE-unsplash.jpg" alt="random lorem picsum thumbnail image" />
-							</figure>
-							<div class="sidebar_blog_copy half_width">
-								<h4 class="sidebar_blog_title">Best Beaches in Sydney For The Easter Long Weekend</h4>
-								<div class="sidebar_blog_category">Fashion</div>
-							</div>
-						</article>
-						<article class="sidebar_blog_item container">
-							<figure class="image">
-								<img src="../ocean/jeremy-bishop-1braZySlEKA-unsplash.jpg" alt="random lorem picsum thumbnail image" />
-							</figure>
-							<div class="sidebar_blog_copy half_width">
-								<h4 class="sidebar_blog_title">Best Beaches in Sydney For The Easter Long Weekend</h4>
-								<div class="sidebar_blog_category">Fashion</div>
-							</div>
-						</article>
-					</div>
-					<div class="sidebar_item social_subscribe">
-						<h3 class="tertiary_heading">Subscribe &amp; Follow</h3>
-						<div class="dashed_border"></div>
-						<nav class="social_nav">
-							<ul>
-								<li class="social_item">
-									<a href="#">
-										<span class="access-hidden github">Github</span>
-										<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" /></svg>
-									</a>
-								</li>
-								<li class="social_item">
-									<a href="#">
-										<span class="access-hidden linkedin">LinkedIn</span>
-										<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" /></svg>
-									</a>
-								</li>
-								<li class="social_item">
-									<a href="#">
-										<span class="access-hidden instagram">Instagram</span>
-										<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-											<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-											<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-										</svg>
-									</a>
-								</li>
-								<li class="social_item">
-									<a href="#">
-										<span class="access-hidden pinterest">Pinterest</span>
-										<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z" /></svg>
-									</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="sidebar_item instagram_grid">
-						<h3 class="tertiary_heading">Instagram</h3>
-						<div class="dashed_border"></div>
-						<div class="sidebar_grid container">
-							<figure class="image half_width">
-								<img src="../ocean/silas-baisch-K785Da4A_JA-unsplash.jpg" alt="A photo from Instagram." />
-							</figure>
-							<figure class="image half_width">
-								<img src="../ocean/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg" alt="A photo from Instagram." />
-							</figure>
-							<figure class="image half_width">
-								<img src="../ocean/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" alt="A photo from Instagram." />
-							</figure>
-							<figure class="image half_width">
-								<img src="../ocean/kyle-loftus-fg_FSTo7ejw-unsplash.jpg" alt="A photo from Instagram." />
-							</figure>
-							<figure class="image half_width">
-								<img src="../ocean/kino--MWoUTlQcHA-unsplash.jpg" alt="A photo from Instagram." />
-							</figure>
-							<figure class="image half_width">
-								<img src="../ocean/joel-vodell-8Ogfqvw15Rg-unsplash.jpg" alt="A photo from Instagram." />
-							</figure>
-							<figure class="image half_width">
-								<img src="../ocean/jeremy-bishop-1braZySlEKA-unsplash.jpg" alt="A photo from Instagram." />
-							</figure>
-							<figure class="image half_width">
-								<img src="../ocean/gatis-marcinkevics-a5uptAdUmjE-unsplash.jpg" alt="A photo from Instagram." />
-							</figure>
-						</div>
-						<p class="insta_handle"><a href="#">@angelajholden</a></p>
-					</div>
-					<div class="sidebar_item dropdown">
-						<h3 class="tertiary_heading">Categories</h3>
-						<div class="dashed_border"></div>
-						<button class="dropdown-button">
-							Select Category
-							<span>&#8227;</span>
-						</button>
-						<ul class="dropdown-menu">
-							<li><a href="#">Tech</a></li>
-							<li><a href="#">Lifestyle</a></li>
-							<li><a href="#">Food</a></li>
-						</ul>
-					</div>
-				</aside>
 			</div>
 		</main>
 		<footer class="footer">
@@ -807,7 +279,7 @@
 				</ul>
 			</nav>
 			<nav class="footer_nav main_nav">
-				<ul>
+				<ul class="nav_container">
 					<li class="nav_item"><a class="nav_link" href="#">Home</a></li>
 					<li class="nav_item"><a class="nav_link" href="#">Features</a></li>
 					<li class="nav_item"><a class="nav_link" href="#">Travel</a></li>

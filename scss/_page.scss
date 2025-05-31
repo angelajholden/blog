@@ -1,0 +1,48 @@
+.blog_layout {
+	.page & {
+		width: 100%;
+	}
+}
+
+h1.secondary_heading {
+	.page & {
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.image.heading {
+	.page & {
+		aspect-ratio: 16 / 7;
+	}
+}
+
+.page_intro {
+	.page & {
+		p {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: #557;
+			text-align: center;
+		}
+	}
+}
+
+.blog_content.two_columns {
+	.page & {
+		columns: 2 auto;
+		gap: 3rem;
+
+		@media (max-width: 960px) {
+			columns: 1;
+			gap: 0;
+		}
+	}
+}
+
+p {
+	.two_columns & {
+		margin: 0 0 1rem;
+	}
+}

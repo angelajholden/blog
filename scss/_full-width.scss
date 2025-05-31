@@ -1,11 +1,11 @@
 .blog_layout {
-	.full_width & {
+	.full_width-page & {
 		width: 100%;
 	}
 }
 
 .hero {
-	.full_width & {
+	.full_width-page & {
 		position: relative;
 		width: 100%;
 		margin-bottom: 5rem;
@@ -14,7 +14,7 @@
 }
 
 .primary-heading {
-	.full_width & {
+	.full_width-page & {
 		position: absolute;
 		top: 85%;
 		left: 50%;
@@ -32,7 +32,7 @@
 }
 
 .hero-image {
-	.full_width & {
+	.full_width-page & {
 		position: relative;
 		width: 100%;
 		margin: 0;
@@ -54,13 +54,13 @@
 }
 
 .main-wrap {
-	.full_width & {
+	.full_width-page & {
 		padding: 2rem 0.5rem 3rem;
 	}
 }
 
 .border_top {
-	.full_width & {
+	.full_width-page & {
 		width: 75px;
 		margin: 0.5rem auto 1rem;
 		padding: 0.5rem 0 1rem;
@@ -68,8 +68,8 @@
 	}
 }
 
-.full_width-meta {
-	.full_width & {
+.full_width-page-meta {
+	.full_width-page & {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: center;
@@ -84,20 +84,20 @@
 }
 
 .blog_category {
-	.full_width & {
+	.full_width-page & {
 		padding: 0.25rem 0.5rem;
 		border: 1px solid $links;
 	}
 }
 
 .blog_content {
-	.full_width & {
+	.full_width-page & {
 		margin: 3rem 0 0;
 	}
 }
 
 .content_image-container {
-	.full_width & {
+	.full_width-page & {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
@@ -110,7 +110,7 @@
 }
 
 .content_image {
-	.full_width & {
+	.full_width-page & {
 		position: relative;
 		width: 40%;
 		margin: 0;
@@ -131,7 +131,7 @@
 }
 
 .content_wrapper {
-	.full_width & {
+	.full_width-page & {
 		width: 58%;
 
 		@media (max-width: 960px) {
