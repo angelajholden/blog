@@ -1,5 +1,7 @@
 # QA Testing
 
+## Round One
+
 -   navigation needs "You Are Here" link underline
 -   Weird top border inside the blog author box DONE
 -   Spacing above the date in Related Posts section DONE
@@ -14,8 +16,18 @@
 -   make an svg signature DONE
 -   need clamp() for .secondary-heading font-size DONE
 
+## Round Two
+
+-   social icons on blog layout should be centeed, but they are left aligned
+-   titles for side latest posts need to be linked
+-   need padding after date, before next item on masonry layout
+-   full width blog header still looks too tight on mobile - probably just need more margin after hero
+-   footer links should be white on hover
+
 ## Forms
 
+-   safari select, also ios select
+-   investigate form styles on ios
 -   make the height of the form textarea taller
 -   gap inbetween inputs on form is too big on full_width layout
 

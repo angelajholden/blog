@@ -88,5 +88,10 @@
 		display: block;
 		color: $black;
 		text-decoration: none;
+
+		svg {
+			display: block;
+			height: auto;
+		}
 	}
 }
