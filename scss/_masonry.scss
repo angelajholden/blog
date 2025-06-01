@@ -97,6 +97,15 @@
 	}
 }
 
+.blog_category {
+	.masonry & {
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 1px;
+		color: $links;
+	}
+}
+
 .blog_date {
 	.masonry & {
 		text-transform: uppercase;

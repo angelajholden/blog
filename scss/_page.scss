@@ -15,6 +15,10 @@ h1.secondary_heading {
 .image.heading {
 	.page & {
 		aspect-ratio: 16 / 7;
+
+		@media (max-width: 960px) {
+			margin: 0;
+		}
 	}
 }
 

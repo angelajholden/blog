@@ -129,7 +129,7 @@ h2 {
 
 .image {
 	.related-posts & {
-		margin: 0;
+		margin: 0 0 1rem;
 	}
 }
 
@@ -137,7 +137,7 @@ h2 {
 	.blog & {
 		padding-bottom: 3rem;
 		margin-bottom: 3rem;
-		border-bottom: 1px solid $gray;
+		// border-bottom: 1px solid $gray;
 	}
 }
 

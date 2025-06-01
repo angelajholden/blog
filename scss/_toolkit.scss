@@ -123,13 +123,14 @@ button,
 	padding: 3rem 0.5rem;
 
 	@media (max-width: 960px) {
-		padding: 1rem 0 0;
+		padding: 0;
 	}
 }
 
 .button_icon {
 	display: inline-block;
 	padding: 11.5px; // makes the icon tap target 48px x 48px for a11y
+	margin: 0;
 	border: none;
 	background: none;
 	cursor: pointer;
@@ -139,5 +140,23 @@ button,
 		width: 25px;
 		height: 25px;
 		stroke: $black;
+	}
+}
+
+svg {
+	.blog_layout .signature & {
+		display: block;
+		width: 200px;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.sidebar_layout .signature & {
+		display: block;
+		width: 100px;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
 	}
 }
