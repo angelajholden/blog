@@ -16,6 +16,14 @@ It’s mobile responsive and includes a custom CSS masonry layout for the blog a
 
 _This project is part of a free, open-source series focused on helping newer developers practice HTML/CSS with real-world examples._
 
+## :construction: Contributing Guidelines
+
+All pull requests should be submitted to the `staging` branch.  
+Please use a feature branch (e.g., `fix/button-spacing`) when submitting PRs.  
+We'll merge to `main` after review and testing.
+
+Thanks for contributing!
+
 ## :red_circle: YouTube
 
 :movie_camera: **Watch the build in action** on my [YouTube channel](https://www.youtube.com/@angelajholden) — or check out the [project playlist](https://www.youtube.com/playlist?list=PLiEcEGGtRVumb3GPMVk2JYG687ysA3vN9) to follow the full step-by-step process.
