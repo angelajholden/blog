@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <defs>
+    <linearGradient id="oceanGradient16" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4db8d8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1E9FB4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a8ba1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="16" height="16" fill="url(#oceanGradient16)" rx="2"/>
+  
+  <!-- Ocean waves -->
+  <path d="M0 10 Q4 8 8 10 T16 10 V16 H0 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M0 12 Q3 10 6 12 T12 12 Q14 11 16 12 V16 H0 Z" fill="#ffffff" opacity="0.7"/>
+  
+  <!-- Small bubbles -->
+  <circle cx="4" cy="5" r="0.8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="10" cy="4" r="0.5" fill="#ffffff" opacity="0.4"/>
+</svg>
