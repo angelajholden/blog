@@ -1,18 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-	// ===== Development Cache Buster =====
-	const bustDevCache = () => {
-		const linkRelStyle = document.querySelectorAll('link[rel="stylesheet"]');
-		linkRelStyle.forEach((link) => {
-			const href = link.getAttribute("href");
-			const hasQuery = href.includes("?");
-			const randomVersion = Math.floor(Math.random() * 100000);
-			const newHref = hasQuery ? `${href}&devcache=${randomVersion}` : `${href}?devcache=${randomVersion}`;
-			link.setAttribute("href", newHref);
-		});
-	};
-
-	bustDevCache();
-
 	// ===== Highlight Current Nav Link =====
 	const setActiveNavLink = () => {
 		const links = document.querySelectorAll(".nav_link");
