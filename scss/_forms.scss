@@ -101,6 +101,18 @@ input[type="button"] {
 	}
 }
 
+textarea {
+	.form & {
+		height: 250px;
+	}
+}
+
+.half_width {
+	.form & {
+		width: 49%;
+	}
+}
+
 .subscribe {
 	.form & {
 		width: 100%;

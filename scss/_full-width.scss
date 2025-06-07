@@ -7,7 +7,10 @@
 
 .hero_full {
 	.full_width-page & {
-		@include flex-container;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-flow: row wrap;
 		width: 100%;
 	}
 }
@@ -22,11 +25,11 @@
 		text-align: center;
 		margin: -3rem auto 0;
 		padding: clamp(1rem, 3vw, 3rem);
-		// padding-bottom: 0;
 		background-color: $white;
 		font-family: "Gelasio", serif;
 		font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-		// transform: translateY(-3rem);
+		transform: translateZ(0);
+		flex-shrink: 0;
 	}
 }
 

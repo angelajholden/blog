@@ -28,8 +28,8 @@
 
 -   safari select, also ios select
 -   investigate form styles on ios
--   make the height of the form textarea taller
--   gap inbetween inputs on form is too big on full_width layout
+-   make the height of the form textarea taller DONE
+-   gap inbetween inputs on form is too big on full_width layout DONE
 
 ## Technical Debt
 
