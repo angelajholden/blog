@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+	// For development only
+	const linkRelStyle = document.querySelectorAll('link[rel="stylesheet"]');
+	linkRelStyle.forEach((link) => {
+		const href = link.getAttribute("href");
+		const hasQuery = href.includes("?");
+		const randomVersion = Math.floor(Math.random() * 100000);
+		const newHref = hasQuery ? `${href}&devcache=${randomVersion}` : `${href}?devcache=${randomVersion}`;
+		link.setAttribute("href", newHref);
+	});
+
 	// You Are Here Navigation
 	const links = document.querySelectorAll(".nav_link");
 	console.log(links);
