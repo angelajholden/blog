@@ -26,13 +26,13 @@
 
 ## Forms
 
--   safari select, also ios select
--   investigate form styles on ios
 -   make the height of the form textarea taller DONE
 -   gap inbetween inputs on form is too big on full_width layout DONE
 
 ## Technical Debt
 
+-   safari select, also ios select
+-   investigate form styles on ios
 -   remember to remove the stylesheet devcache script
 -   consider more CSS refactoring and make a scss partial for typography and headings
 -   rethink the CSS structure strategy so layouts aren't tied to really specific types of pages
