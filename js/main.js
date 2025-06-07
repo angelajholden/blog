@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
 	// ===== Highlight Current Nav Link =====
+	// Only works without '/index.html'
 	const setActiveNavLink = () => {
 		const links = document.querySelectorAll(".nav_link");
-		const href = window.location.href;
+		const currentPath = window.location.pathname;
 		links.forEach((link) => {
-			if (link.href === href) {
+			const linkPath = new URL(link.href).pathname;
+			if (linkPath === currentPath) {
+				link.classList.add("active");
+			} else if (currentPath === "/" && linkPath === "/home") {
 				link.classList.add("active");
 			}
 		});
