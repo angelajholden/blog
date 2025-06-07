@@ -22,14 +22,14 @@ input[type="date"],
 input[type="datetime-local"],
 input[type="week"],
 input[type="month"],
-input[type="color"],
 textarea,
 select {
 	.form & {
 		width: 100%;
+		max-width: 100%;
 		background-color: $white;
 		border: 1px solid $dk-gray;
-		padding: 1rem;
+		padding: 1rem !important;
 		margin-bottom: 1rem;
 	}
 }

@@ -33,6 +33,7 @@
 
 ## Technical Debt
 
+-   remember to remove the stylesheet devcache script
 -   consider more CSS refactoring and make a scss partial for typography and headings
 -   rethink the CSS structure strategy so layouts aren't tied to really specific types of pages
 -   layout styles are templates, not pages like about or contact
