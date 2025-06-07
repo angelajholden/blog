@@ -1,0 +1,31 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Explicitly declare text files
+*.html text
+*.css text
+*.scss text
+*.js text
+*.json text
+*.md text
+*.yml text
+*.xml text
+*.txt text
+
+# Binary files - never normalize
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.mp4 binary
+*.mov binary
+
+# Lock critical config files to LF (optional)
+*.sh text eol=lf
+*.php text eol=lf
