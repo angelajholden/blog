@@ -173,17 +173,12 @@
 
 .blog_category {
 	.blog_layout & {
-		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: 1px;
 		color: $links;
 	}
 }
 
 .secondary_heading {
 	.blog_layout & {
-		font-family: "Gelasio", serif;
-		font-size: clamp(1.5rem, 4vw, 2rem);
 		text-align: center;
 
 		&::after {
@@ -199,10 +194,6 @@
 
 .blog_date {
 	.blog_layout & {
-		display: block;
-		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: 1px;
 		color: #555;
 	}
 }
@@ -231,8 +222,6 @@
 		text-align: center;
 
 		a {
-			font-family: "Gelasio", serif;
-			font-style: italic;
 			text-decoration: none;
 
 			&:hover > svg,

@@ -8,11 +8,6 @@ h2 {
 .blog_heading {
 	.blog & {
 		display: inline-block;
-		font-family: "Gelasio", serif;
-		font-size: 1rem;
-		font-weight: 400;
-		text-transform: uppercase;
-		letter-spacing: 1px;
 		margin: 0 0 3rem 50%;
 		transform: translateX(-50%);
 		border-bottom: 1px solid $black;
@@ -196,7 +191,6 @@ h2 {
 
 .tertiary-heading {
 	.comments & {
-		font-family: "Gelasio", serif;
 		font-size: 1rem;
 		font-weight: 700;
 	}

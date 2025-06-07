@@ -71,9 +71,6 @@
 
 .secondary_heading {
 	.masonry & {
-		font-family: "Gelasio", serif;
-		font-size: clamp(1.1rem, 3vw, 1.25rem);
-
 		&::after {
 			content: "";
 			display: block;
@@ -87,18 +84,14 @@
 
 .blog_category {
 	.masonry & {
-		text-transform: uppercase;
 		text-align: center;
-		letter-spacing: 1px;
 		color: $links;
 	}
 }
 
 .blog_date {
 	.masonry & {
-		text-transform: uppercase;
 		text-align: center;
-		letter-spacing: 1px;
 		color: #555;
 	}
 }
@@ -130,13 +123,11 @@
 			margin: 0;
 			padding: 3rem;
 			transform: translateX(-50%);
-			font-size: 1.5rem;
 			background-color: $white;
 			z-index: 1;
 
 			@media (max-width: 960px) {
 				padding: 1.5rem;
-				font-size: 1.25rem;
 			}
 
 			&::after {
