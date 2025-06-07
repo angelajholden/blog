@@ -1,8 +1,7 @@
 # QA Testing
 
-## Round One
+## Round One DONE
 
--   navigation needs "You Are Here" link underline
 -   Weird top border inside the blog author box DONE
 -   Spacing above the date in Related Posts section DONE
 -   update the date divs to <time> element DONE
@@ -18,11 +17,12 @@
 
 ## Round Two
 
--   social icons on blog layout should be centeed, but they are left aligned
--   titles for side latest posts need to be linked
--   need padding after date, before next item on masonry layout
--   full width blog header still looks too tight on mobile - probably just need more margin after hero
--   footer links should be white on hover
+-   navigation needs "You Are Here" link underline DONE
+-   social icons on blog layout should be centeed, but they are left aligned DONE
+-   titles for side latest posts need to be linked DONE
+-   need padding after date, before next item on masonry layout DONE
+-   full width blog header still looks too tight on mobile - probably just need more margin after hero DONE
+-   footer links should be white on hover DONE
 
 ## Forms
 

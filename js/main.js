@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+	// You Are Here Navigation
+	const links = document.querySelectorAll(".nav_link");
+	console.log(links);
+	const href = window.location.href;
+	console.log(href);
+	links.forEach((link) => {
+		// console.log(link.href);
+		if (link.href === href) {
+			link.classList.add("active");
+		}
+	});
+
 	const menuButton = document.querySelector(".button_menu");
 	const menu = document.querySelector(".mobile_off_canvas");
 	const searchButton = document.querySelector(".button_search");
@@ -14,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (includeExtra) {
 			elements.unshift(includeExtra);
 		}
-
 		return elements;
 	}
 
@@ -144,6 +155,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const currentSpan = document.querySelector(".slider-meta span:first-child");
 	const totalSpan = document.querySelector(".slider-meta span:last-child");
 	const slider = document.querySelector(".slider");
+
+	if (!slider) return;
 
 	let currentIndex = 0;
 	const totalSlides = sliderItems.length;

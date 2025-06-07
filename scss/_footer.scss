@@ -58,9 +58,11 @@
 		margin: 0.3rem;
 		color: $dk-gray;
 
+		&.active,
 		&:hover,
 		&:active,
 		&:focus {
+			color: $white;
 			text-decoration-color: $white;
 		}
 	}

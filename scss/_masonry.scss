@@ -58,25 +58,13 @@
 	.masonry & {
 		width: 95%;
 		margin-left: auto;
+		padding-bottom: 3rem;
+		text-align: center;
 		break-inside: avoid;
 
 		@media (max-width: 1024px) {
 			width: 100%;
-		}
-
-		@media (max-width: 960px) {
-			margin-bottom: 2rem;
-		}
-	}
-}
-
-.blog_item {
-	.masonry & {
-		margin-bottom: 3rem;
-		text-align: center;
-
-		@media (max-width: 960px) {
-			margin-bottom: 0;
+			padding-bottom: 2rem;
 		}
 	}
 }
