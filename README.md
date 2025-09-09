@@ -28,9 +28,9 @@ Thanks for contributing!
 
 :movie_camera: **Watch the build in action** on my [YouTube channel](https://www.youtube.com/@angelajholden) — or check out the [project playlist](https://www.youtube.com/playlist?list=PLiEcEGGtRVumb3GPMVk2JYG687ysA3vN9) to follow the full step-by-step process.
 
-## :link: See the site on Heroku
+## :link: See the site on Github Pages
 
--   https://blog-website-3dcdb76fe42e.herokuapp.com/
+-   https://angelajholden.github.io/blog
 
 ## :rocket: Quick Start
 
